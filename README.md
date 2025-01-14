@@ -1,12 +1,12 @@
 # Game Notification System
 
 ## **Project Overview**
-This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EvenBridge** and **NBA APIs** to provide sports fans with up-to-date game information. The project demonstrates cloud computing principles and efficient notification mechanisms.
+This project is an alert system that sends real-time game score notifications to subscribed users via SMS/Email. It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EvenBridge** and ** (SportsData.io) API ** to provide sports fans with up-to-date game information. The project demonstrates cloud computing principles and efficient notification mechanisms.
 
 ---
 
 ## **Features**
-- Fetches live NBA game scores using an external API.
+- Fetches live game scores using an external API.
 - Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
 - Scheduled automation for regular updates using Amazon EventBridge.
 - Designed with security in mind, following the principle of least privilege for IAM roles.
@@ -27,7 +27,7 @@ This project is an alert system that sends real-time NBA game day score notifica
 ## **Technologies**
 - **Cloud Provider**: AWS
 - **Core Services**: SNS, Lambda, EventBridge
-- **External API**: NBA Game API (SportsData.io)
+- **External API**: Game API (SportsData.io)
 - **Programming Language**: Python 3.x
 - **IAM Security**:
   - Least privilege policies for Lambda, SNS, and EventBridge.
@@ -52,7 +52,7 @@ game-day-notifications/
 ### **Clone the Repository**
 ```bash
 git clone https://github.com/tohidhanfi20/GameNotificationSystem.git
-cd game-day-notifications
+cd GameNotificationSystem
 ```
 
 ### **Create an SNS Topic**
@@ -71,7 +71,7 @@ cd game-day-notifications
   - Enter a valid email address.
 - For SMS (phone number):
   - Choose SMS.
-  - Enter a valid phone number in international format (e.g., +1234567890).
+  - Enter a valid phone number (e.g., +1234567890).
 
 4. Click Create Subscription.
 5. If you added an Email subscription:
@@ -141,6 +141,6 @@ cd game-day-notifications
 
 
 ### **Future Enhancements**
-1. Add NFL score alerts for extended functionality.
+1. Add score alerts for extended functionality.
 2. Store user preferences (teams, game types) in DynamoDB for personalized alerts.
 3. Implement a web UI
